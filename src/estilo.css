@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+#navbar a {
+    margin: 5px;
+}
+
+.cart {
+    width: 100px;
+    height: 100px;
+}
