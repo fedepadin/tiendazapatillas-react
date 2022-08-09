@@ -9,8 +9,7 @@ function NavBar(){
 
             <h2>SHOPPING ONLINE</h2>
 
-            
-
+        
            <nav id="navbar">
             
             <CartWidjet></CartWidjet>

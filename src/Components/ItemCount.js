@@ -1,13 +1,14 @@
 import { useState } from "react";
 
 
-const ItemCount = () => {
+
+const ItemCount = ({stockInicial, stockMaximo}) => {
 
     const [contador, setContador] = useState(0);
 
     const sumarContador = () => {
 
-        if(contador<10){
+        if(contador<(parseInt(stockMaximo))){
 
             setContador(contador + 1);
 
@@ -17,12 +18,12 @@ const ItemCount = () => {
     
     const reiniciarContador = () => {
 
-        setContador(0);
+        setContador(parseInt(stockInicial));
 
     }
     const restarContador = () => {
 
-        if(contador>0){
+        if(contador>(parseInt(stockInicial))){
 
             setContador(contador - 1);
 
